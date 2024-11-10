@@ -9,7 +9,7 @@ export default function App() {
         style={styles.image}
       />
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Clique Aqui</Text>
+        <Text style={styles.buttonText}></Text>
       </TouchableOpacity>
       <Text>Bem Vindo ao UBC ESPORTS!</Text>
       <StatusBar style="auto" />
@@ -25,8 +25,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   image: {
-    width: 100,    // Ajuste a largura da imagem
-    height: 100,   // Ajuste a altura da imagem
+    width: 300,    // Ajuste a largura da imagem
+    height: 200,   // Ajuste a altura da imagem
     marginBottom: 20, // Espaçamento abaixo da imagem
   },
   button: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
-    width: 100,        // Ajuste a largura do botão conforme necessário
+    width: 50,        // Ajuste a largura do botão conforme necessário
     height: 45,        // Ajuste a altura do botão conforme necessário
     justifyContent: 'center', // Centraliza o texto verticalmente
     alignItems: 'center',     // Centraliza o texto horizontalmente
