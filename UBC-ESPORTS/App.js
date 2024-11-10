@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Image
-      source={require('./C:\Users\User\OneDrive\Documentos\expo-app\UBC-ESPORTS\.gitignore')}
+      source={require('.UBC-ESPORTS\src\components\football.png')}
       style={styles.Image}/>
       <Text>Bem Vindo ao UBC ESPORTS!</Text>
       <StatusBar styles="auto" />
