@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Image
-      source={require('.UBC-ESPORTS\src\components\football.png')}
+      source={require('./src/components/football.png')}
       style={styles.Image}/>
       <Text>Bem Vindo ao UBC ESPORTS!</Text>
       <StatusBar styles="auto" />
