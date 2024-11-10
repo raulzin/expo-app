@@ -3,15 +3,16 @@ import { TouchableOpacity, StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={styles.container}>  
       <Image
-      source={require('./src/components/football.png')}
-      style={styles.Image}/>
-       <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Pressione-me</Text>
+        source={require('./src/components/football.png')}
+        style={styles.image}
+      />
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>Clique Aqui</Text>
       </TouchableOpacity>
       <Text>Bem Vindo ao UBC ESPORTS!</Text>
-      <StatusBar styles="auto" />
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -23,17 +24,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  image: {
+    width: 100,    // Ajuste a largura da imagem
+    height: 100,   // Ajuste a altura da imagem
+    marginBottom: 20, // Espaçamento abaixo da imagem
+  },
   button: {
     backgroundColor: '#6200ee',
-    paddingVertical: 10,  // Ajuste do padding vertical (reduz a altura)
-    paddingHorizontal: 20, // Ajuste do padding horizontal (reduz a largura)
-    borderRadius: 5,       // Borda arredondada do botão
-    width: 150,            // Ajuste da largura do botão
-    height: 40,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    width: 100,        // Ajuste a largura do botão conforme necessário
+    height: 45,        // Ajuste a altura do botão conforme necessário
+    justifyContent: 'center', // Centraliza o texto verticalmente
+    alignItems: 'center',     // Centraliza o texto horizontalmente
   },
   buttonText: {
     color: '#fff',
-    fontSize: 14,          // Tamanho do texto dentro do botão
+    fontSize: 14,
     textAlign: 'center',
   },
 });
+
