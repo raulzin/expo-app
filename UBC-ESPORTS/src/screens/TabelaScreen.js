@@ -14,7 +14,7 @@ export default function TabelaScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Classificação da Libertadores</Text>
+      <Text style={styles.title}>Classificação</Text>
       {error ? (
         <Text>Erro ao carregar a classificação: {error}</Text>
       ) : (
