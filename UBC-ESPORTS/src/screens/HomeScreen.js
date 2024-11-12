@@ -1,15 +1,28 @@
 import React from 'react';
-import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Tabela')}>
-        <Text style={styles.buttonText}>Ver Classificação</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Noticias')}>
-        <Text style={styles.buttonText}>Ver Notícias</Text>
-      </TouchableOpacity>
+      {/* Texto centralizado */}
+      <Text style={styles.title}>⭐ UBC SPORTS ⭐</Text>
+
+      {/* Botões roxos */}
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity 
+          style={styles.button}
+          onPress={() => navigation.navigate('Tabela')}
+        >
+          <Text style={styles.buttonText}>Classificação</Text>
+        </TouchableOpacity>
+        
+        <TouchableOpacity 
+          style={styles.button}
+          onPress={() => navigation.navigate('Noticias')}
+        >
+          <Text style={styles.buttonText}>Notícias</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -17,18 +30,32 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#FFA500', // Fundo laranja
+    justifyContent: 'center',  // Centraliza o conteúdo
+    alignItems: 'center',      // o conteúdo horizontalmente
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#fff', // Cor do texto
+    textAlign: 'center',  // Centraliza o texto
+    marginBottom: 50, // Espaço entre o título e os botões
+  },
+  buttonContainer: {
+    position: 'absolute',
+    bottom: 30,  // Ajusta a posição dos botões para mais embaixo
+    width: '80%', // Largura dos botões
   },
   button: {
-    backgroundColor: '#6200ee',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    marginVertical: 10,
+    backgroundColor: '#8A2BE2', // Cor roxa
+    padding: 15,
+    marginBottom: 15,
+    borderRadius: 8, // Borda arredondada
+    alignItems: 'center',
   },
   buttonText: {
     color: '#fff',
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 });
