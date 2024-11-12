@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';  //navegação em apps reactNative
 import { createStackNavigator } from '@react-navigation/stack';  //função stacknavigator
-import HomeScreen from './src/screens/HomeScreen';  //
-import TabelaScreen from './src/screens/TabelaScreen';
-import NoticiasScreen from './src/screens/NoticiasScreen';
+import HomeScreen from './src/screens/HomeScreen';  //tela inicial
+import TabelaScreen from './src/screens/TabelaScreen'; //telaTabela
+import NoticiasScreen from './src/screens/NoticiasScreen'; //telaNoticias
 
 const Stack = createStackNavigator();
 
