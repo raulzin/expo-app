@@ -5,7 +5,7 @@ import HomeScreen from './src/screens/HomeScreen';  //tela inicial
 import TabelaScreen from './src/screens/TabelaScreen'; //telaTabela
 import NoticiasScreen from './src/screens/NoticiasScreen'; //telaNoticias
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator(); //variavel que cria objeto stack
 
 export default function App() {
   return (
