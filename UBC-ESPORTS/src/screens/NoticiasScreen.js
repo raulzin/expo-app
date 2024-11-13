@@ -14,7 +14,7 @@ export default function NoticiasScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Notícias de Futebol</Text>
+      <Text style={styles.title}>Notícias</Text>
       {error ? (
         <Text>Erro ao carregar notícias: {error}</Text>
       ) : (
