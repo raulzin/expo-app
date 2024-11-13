@@ -34,8 +34,8 @@ app.get('/finais-libertadores-2024', (req, res) => {
   res.json(finaisLibertadores2024);
 });
 
-// Iniciando o servidor na porta 3001
+// Iniciando o servidor na porta 3000
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
-//URL   http://localhost:3001/finais-libertadores-2024
+//URL   http://localhost:3000/finais-libertadores-2024
