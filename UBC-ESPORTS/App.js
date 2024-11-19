@@ -12,8 +12,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'UBC ESPORTS' }} />
-        <Stack.Screen name="Tabela" component={TabelaScreen} options={{ title: 'Classificação da Libertadores' }} />
-        <Stack.Screen name="Noticias" component={NoticiasScreen} options={{ title: 'Notícias de Futebol' }} />
+        <Stack.Screen name="Tabela" component={TabelaScreen} options={{ title: 'Classificação' }} />
+        <Stack.Screen name="Noticias" component={NoticiasScreen} options={{ title: 'Notícias' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
