@@ -7,7 +7,7 @@ export default function TabelaScreen() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('URL_DA_API_DE_CLASSIFICACAO')
+    axios.get('https://api.futebol.com.br/brasileirao/2024/tabela')
       .then(response => setClassificacao(response.data))
       .catch(error => setError(error.message));
   }, []);
